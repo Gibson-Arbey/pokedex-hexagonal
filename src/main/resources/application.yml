@@ -1,0 +1,19 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: pokedex
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/pokedex
+    username: root
+    password: "1234"
+
+  jpa: 
+    hibernate:
+      ddl-auto: update
+
+  data:
+    mongodb:
+      uri: mongodb://admin:1234@localhost:27017/pokedex?authSource=admin
